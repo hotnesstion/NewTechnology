@@ -41,8 +41,6 @@ and the repository exists.
 
 1.设置里面进入SSH and GPG keys
 
-![image-20230518093433857](img\image-20230518093433857.png)
-
 2.点击创建一个新的密钥"New SSH key"
 
 3.在 Git bash here 输入命令
