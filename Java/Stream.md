@@ -41,6 +41,8 @@ List<User> results = ids.stream()
 ```java
 ids.stream()
     .filter(detp -> dept.getId()>5)
+    .filter(Objects::nonNUll)  //过滤掉空值
+    .filter(item -> !ObjectUtils.isEmpty(item.getId())  //过滤
     .collect(Collectors.toList());
 .collect(Collectors.toSet())
 .collect(Colletcors.toMap(User::getId , dept -> dept));
