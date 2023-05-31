@@ -24,3 +24,10 @@ SELECT MAX (id) FROM table_name;
 ALTER TABLE table_name AUTO_INCREMENT = max_id + 1;
 ```
 
+##### windows关闭Java进程
+
+```shell
+jps -l
+taskkill /pid 1234 /f
+```
+
