@@ -24,5 +24,16 @@ SELECT MAX (id) FROM table_name;
 ALTER TABLE table_name AUTO_INCREMENT = max_id + 1;
 ```
 
+##### Optional判断null
+
+```java
+Data data =  Optional.ofNullable(table)
+   		 .map(tableItem -> tableItem.getColumn())
+   		 .map(col -> col.getData())
+   		 .orElseThrow(() -> new RuntimeException("有 null")) 
+    	 .orElse(getDefaultValue()) //一定会执行  但是那不到这个方法的返回值
+    	 .orElseGet(() -> getDefaultValue()) //拿得到返回值 
+```
+
 
 

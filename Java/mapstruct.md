@@ -113,3 +113,13 @@ public interface DepartmentsMapper {
     StudentVO student2StudentVO(Student student);
 ```
 
+
+
+#### set方法
+
+```java
+@Builder
+
+Student student = Student.builder().name("小明").age(6).gender(GenderEnum.Male).height(121.1).birthday(new Date()).build();
+```
+
