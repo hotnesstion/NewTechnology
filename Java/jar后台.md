@@ -2,9 +2,10 @@
 //后台启动jar
 start javaw -jar xx.jar
 //根据端口号查询jar包进程PID
-netstat -ano | findstr  8080
+netstat -ano | findstr  8084
 //根据PID关闭进程
-taskkill /pid 1988 /f
+taskkill /pid 1988 /f 
+taskkill /pid pid号 -f -t
 ```
 
 Windows关闭Java进程
@@ -23,6 +24,10 @@ java -jar slipper-backstage-2.0.0.jar > D:\cyshop\shop\server.log 2>&1 &
 ```
 
 这种启动方式，当前命令窗口关闭后则，程序停止
+
+```shell
+ javaw -jar wms.jar >> log.txt
+```
 
 
 
