@@ -37,3 +37,9 @@ Data data =  Optional.ofNullable(table)
 
 
 
+##### 公网ip
+
+```shell
+nslookup myip.opendns.com resolver1.opendns.com
+```
+
